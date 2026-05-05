@@ -14,12 +14,19 @@ interface Comment {
   "body": string 
 }
 
+interface Adress {
+    "street": string,
+    "suite": string,
+    "city": string,
+    "zipcode": string,
+}
 
 interface User {
   "id": number,
   "name": string,
   "username" : string,
-  "adress" : AddressErrors,
+  "adress" : Adress,
   "title": string,
   "body": string 
+  "geo" : Geo
 }
