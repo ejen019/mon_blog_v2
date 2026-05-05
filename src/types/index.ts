@@ -14,12 +14,21 @@ interface Comment {
   "body": string 
 }
 
+interface Geo {
+      "lat": number,
+      "lng": number
+}
+
+
 interface Adress {
     "street": string,
     "suite": string,
     "city": string,
     "zipcode": string,
+    "geo" : Geo
 }
+
+
 
 interface User {
   "id": number,
@@ -28,5 +37,4 @@ interface User {
   "adress" : Adress,
   "title": string,
   "body": string 
-  "geo" : Geo
 }
